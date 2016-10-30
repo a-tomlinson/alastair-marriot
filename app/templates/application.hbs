@@ -1,5 +1,13 @@
-<div class="logo">
-  {{#link-to 'home'}}<img src="images/logo.png">{{/link-to}}
-</div>
+<div class="background-frame"></div>
+  <div class="logo fadeIn">
+    {{#link-to 'home'}}<img src="images/logo.png">{{/link-to}}
+  </div>
 
-{{outlet}}
+  {{#menu-block class="fadeIn"}}
+  {{liquid-outlet}}
+  {{/menu-block}}
+
+<p class="representation fadeIn">
+  Represented by Tobias Round <br />
+  tround@theroundcompany.com
+</p>

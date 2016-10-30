@@ -1,24 +1,19 @@
-<div class="menu-block">
-  <div class="menu-block__container">
-    <div class="menu-block__content">
-      <img src="images/home/alastair.jpg" alt="Alastair Marriot at work">
+<div class="menu-block__content">
+  <img src="images/home/alastair.jpg" alt="Alastair Marriot at work">
 
-      <div class="menu-block__content--statement">
-        <h3>{{{model.title}}}</h3>
-      </div>
-
-      {{#each model.copy as |line|}}
-        <p>{{{line}}}</p>
-      {{/each}}
-
-    </div>
-
-    <div class="menu-block__menu">
-      <ul>
-        <li>{{#link-to 'biography'}}Full biography{{/link-to}}</li>
-        <li>{{#link-to 'galleries'}}Galleries{{/link-to}}</li>
-      </ul>
-    </div>
+  <div class="menu-block__content--statement">
+    <h3>{{{model.title}}}</h3>
   </div>
-  <p class="menu-block__copyright"><strong>&copy; Alastair Marriot,</strong> 2016</p>
+
+  {{#each model.copy as |line|}}
+    <p>{{{line}}}</p>
+  {{/each}}
+
+</div>
+
+<div class="menu-block__menu">
+  <ul>
+    <li>{{#link-to 'biography'}}Full biography{{/link-to}}</li>
+    <li>{{#link-to 'galleries'}}Galleries{{/link-to}}</li>
+  </ul>
 </div>
