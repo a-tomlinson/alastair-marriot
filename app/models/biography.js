@@ -2,6 +2,7 @@ export default {
   image: {
     caption: "Connectome for Crane.tv"
   },
+  
   copy: [
     "<strong>Alastair Marriott</strong> was born in 1968 and at the age of eleven he studied at The Royal Ballet School for eight years.",
     "He joined The Royal Ballet Company in 1988 and was promoted to soloist in 1992 and Principal Character Artist in 2003. After establishing himself as a dancer he started a successful career as a choreographer under the guidance of The Director of The Company Dame Monica Mason.",
