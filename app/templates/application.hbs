@@ -3,9 +3,11 @@
     {{#link-to 'home'}}<img src="images/logo.png">{{/link-to}}
   </div>
 
-  {{#menu-block class="fadeIn"}}
-  {{liquid-outlet}}
-  {{/menu-block}}
+<a class="main-content__menu {{if isOpen "is-open"}}" {{action "open"}}>Menu</a>
+
+<div class="main-content {{if isOpen "is-open"}}">
+{{liquid-outlet}}
+</div>
 
 <p class="representation fadeIn">
   Represented by Tobias Round <br />

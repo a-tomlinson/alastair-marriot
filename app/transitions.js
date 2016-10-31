@@ -4,4 +4,10 @@ export default function(){
     this.toRoute(['home','biography']),
     this.use('fade')
   )
+
+
+  // this.transition(
+  //   this.matchSelector('.main-content.is-open'),
+  //   this.use('toLeft')
+  // )
 };
