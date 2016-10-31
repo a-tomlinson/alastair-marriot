@@ -11,5 +11,7 @@ export default {
     "His works are often requested for international galas including In the Hothouse created for The Queens Diamond Jubilee gala and a pas de deux for The Royal Variety Performance. The Mikailovsky performed a pas de deux from Sensorium for the Russian TV show Bolshoi Ballet and Borrowed Light a solo toured by The Royal Ballet to NYC.",
     "He collaborated with Christopher Wheeldon on the 'extinguishing of the flame' for the closing ceremony of the Olympics and 2014 was presented with a medal for 25 years service with The Royal Ballet. He has been nominated three times for Best Classical Choreography at the Critics' Circle Dance Awards in London and is was nominated for a GoldenMask award in Russia for Zeitgeist a ballet he created for Natalia Osipova in 2015 for her Summer tour.",
     "Recently Alastair was the choreographer on After Mr July for Helen George, directed by Anthony Banks"
-  ]
+  ],
+
+  copyright: "<strong>&copy; Alastair Marriot,</strong> 2016"
 };

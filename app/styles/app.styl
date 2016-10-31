@@ -8,13 +8,17 @@ body
 .logo
   position absolute
   position fixed
-  left 20px
-  top @left
+  margin 20px
   z-index 10
+  text-align center
 
   img
     width 100%
-    max-width 250px
+    margin-left auto
+    margin-right auto
+
+    @media $device-tablet-up
+      max-width 250px
 
 a
   color inherit
@@ -41,21 +45,28 @@ a
     top 0
     left 0
 
-.representation {
+.representation
   position absolute
-  right 20px
   bottom 15px
   color #BEBFC1
   font-family helvetica, arial, sans-serif
-  font-weight 600
+  font-weight 500
   letter-spacing 0.1em
   font-size 13px
   line-height 15px
-  text-align right
-}
+  text-align center
+  width 100%
+  margin 0 auto
+
+  @media $device-tablet-up
+    right 20px
+    text-align right
+    width auto
+
 
 
 .main-content
+  display none
   position absolute
   top 0
   left 0
@@ -63,20 +74,36 @@ a
   height 100%
   background-color rgba(255,255,255,0.8)
   overflow-y scroll
-  padding 120px 20px 80px 20px
+  padding 120px 20px 20px 20px
   left -50%
   transition left 0.5s
+  z-index 5
+
+  @media $device-tablet-up
+    display block
 
   &__menu
+    display none
     position absolute
     left 20px
-    font-size 18px
+    font-size 20px
     bottom 20px
     color #BEBFC1
     font-family helvetica, arial, sans-serif
-    font-weight 600
+    font-weight 500
+    letter-spacing 1.167px
     line-height 15px
-    transition left 0.5s
+    padding-bottom 5px
+    cursor pointer
+    border-bottom 3px solid #bebfc1
+    transition left 0.5s, border 0.5s, color 0.5s
+
+    @media $device-tablet-up
+      display block
+
+    &:hover
+      color white
+      border-bottom 3px solid white
 
     &.is-open
       content 'Close'
@@ -84,3 +111,27 @@ a
 
   &.is-open
     left 0
+
+.video
+  display none
+  min-height 100vh
+  min-width 100vw
+  overflow hidden
+  z-index 0
+
+  @media $device-tablet-up
+    display block
+
+  video
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+  &.is-open
+    display none

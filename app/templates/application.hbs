@@ -1,7 +1,14 @@
+<div class="logo">
+  {{#link-to 'home'}}<img src="images/logo.png">{{/link-to}}
+</div>
+
+<div class="video {{if isOpen "is-open"}}">
+  <video autoplay="true" loop="" muted="true" id="bgvid">
+      <source src="videos/intro.webm" type="video/webm">
+  </video>
+</div>
+
 <div class="background-frame"></div>
-  <div class="logo fadeIn">
-    {{#link-to 'home'}}<img src="images/logo.png">{{/link-to}}
-  </div>
 
 <a class="main-content__menu {{if isOpen "is-open"}}" {{action "open"}}>Menu</a>
 
@@ -9,7 +16,9 @@
 {{liquid-outlet}}
 </div>
 
-<p class="representation fadeIn">
-  Represented by Tobias Round <br />
-  tround@theroundcompany.com
-</p>
+<a href="mailto:tround@theroundcompany.com">
+  <p class="representation">
+    Represented by Tobias Round<br />
+    tround@theroundcompany.com
+  </p>
+</a>
