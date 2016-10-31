@@ -1,4 +1,4 @@
-<div class="logo">
+<div class="logo fadeIn">
   {{#link-to 'home'}}<img src="images/logo.png">{{/link-to}}
 </div>
 
@@ -8,16 +8,22 @@
   </video>
 </div>
 
-<div class="background-frame"></div>
+<ul class="cb-slideshow {{if isOpen "is-open"}}">
+	<li><span>Image 01</span></li>
+	<li><span>Image 02</span></li>
+	<li><span>Image 03</span></li>
+  <li><span>Image 04</span></li>
+	<li><span>Image 05</span></li>
+</ul>
 
-<a class="main-content__menu {{if isOpen "is-open"}}" {{action "open"}}>Menu</a>
+<a class="main-content__menu fadeIn {{if isOpen "is-open"}}" {{action "open"}}>Menu</a>
 
 <div class="main-content {{if isOpen "is-open"}}">
 {{liquid-outlet}}
 </div>
 
 <a href="mailto:tround@theroundcompany.com">
-  <p class="representation">
+  <p class="representation fadeIn">
     Represented by Tobias Round<br />
     tround@theroundcompany.com
   </p>

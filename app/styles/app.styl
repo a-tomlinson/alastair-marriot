@@ -27,24 +27,6 @@ a
   &:visited
     color inherit
 
-.background-frame
-  position absolute
-  width 100%
-  height 100%
-  content ''
-  background-image url('../images/slideshow/woman.jpg')
-  background-position 50% 50%
-  background-size cover
-
-  &::after
-    background rgba(0,0,0,0.5)
-    content ''
-    width 100%
-    height 100%
-    position absolute
-    top 0
-    left 0
-
 .representation
   position absolute
   bottom 15px
@@ -135,3 +117,12 @@ a
 
   &.is-open
     display none
+
+.cb-slideshow
+  display block
+
+  @media $device-tablet-up
+    display none
+
+    &.is-open
+      display block
