@@ -18,7 +18,7 @@
 
 <a class="main-content__menu fadeIn {{if isOpen "is-open"}}" {{action "open"}}>Menu</a>
 
-<div class="main-content {{if isOpen "is-open"}}">
+<div class="main-content {{if isOpen "is-open"}} {{if isGallery "gallery-mode"}}">
 {{liquid-outlet}}
 </div>
 

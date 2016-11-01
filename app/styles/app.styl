@@ -58,8 +58,11 @@ a
   overflow-y scroll
   padding 120px 20px 20px 20px
   left -50%
-  transition left 0.5s
+  transition left 0.5s, width 0.5s
   z-index 5
+
+  &.gallery-mode
+    width 100%
 
   @media $device-tablet-up
     display block
