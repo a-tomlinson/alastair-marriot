@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('home');
   this.route('biography');
   this.route('galleries');
+  this.route('gallery');
 });
 
 export default Router;

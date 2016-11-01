@@ -3,11 +3,5 @@ export default function(){
     this.fromRoute(['home','biography']),
     this.toRoute(['home','biography']),
     this.use('fade')
-  )
-
-
-  // this.transition(
-  //   this.matchSelector('.main-content.is-open'),
-  //   this.use('toLeft')
-  // )
-};
+  );
+}

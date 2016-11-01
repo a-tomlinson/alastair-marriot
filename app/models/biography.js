@@ -1,7 +1,5 @@
 export default {
-  image: {
-    caption: "Connectome for Crane.tv"
-  },
+  caption: "Connectome for Crane.tv",
 
   copy: [
     "<strong>Alastair Marriott</strong> was born in 1968 and at the age of eleven he studied at The Royal Ballet School for eight years.",
